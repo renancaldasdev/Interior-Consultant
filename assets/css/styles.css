@@ -6,10 +6,90 @@
   box-sizing: border-box;
 }
 
+:root{
+  --background-color: #181719;
+  --primary-font: 'Montserrat', sans-serif;
+  --logo-font: 'Crimson Pro', serif;
+  --second-font: 'Lora', serif;
+  --primary-color: #ffffff;
+  --second-color: #828282;
+  --copy-color: #A9A9A9;
+}
+
 html{
   font-size: 62.5%;
 }
 
 body{
   font-size: 1.6rem;
+  font-family: var(--primary-font);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.container{
+  max-width: 124rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.header-content .logo a {
+  display: block;
+  padding: 8px;
+  border: 1px solid #ffffff;
+
+  color: var(--primary-color);
+  text-decoration: none;
+
+  font-family: var(--logo-font);
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+}
+
+.menu ul {
+  display: flex;
+  gap: 9rem;
+  list-style: none;
+}
+
+.menu ul li {
+  width: 24%;
+}
+
+.menu ul li a{
+  color: var(--primary-color);
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  padding: 8px 0;
+  position: relative;
+  text-shadow: 0 0 00.1px;
+}
+
+
+.menu ul li a::after{
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  transition: 0.3s;
+  background-color: var(--primary-color);
+  margin-top: 4px;
+  position: absolute;
+}
+
+.menu ul li a:hover::after{
+  width: 100%;
 }
