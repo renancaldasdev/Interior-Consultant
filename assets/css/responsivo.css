@@ -1,0 +1,94 @@
+@media (max-width: 800px) {
+  main {
+    padding-top: 3.8rem !important;
+  }
+  .container {
+    max-width: 80rem;
+    padding: 0 12px;
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .main-text p {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header-content {
+    padding-top: 2rem;
+  }
+
+  .header-content .open {
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .header-content .close {
+    display: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  footer {
+    padding-top: 14rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-text h1 {
+    font-size: 3.6rem;
+    font-weight: 4.6rem;
+  }
+  .main-text p {
+    max-width: 25rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  .main-text a {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  .main-image > img {
+    max-width: 35rem;
+  }
+
+  .main-card {
+    width: 30rem;
+    right: 16px;
+  }
+
+  .main-card--person {
+    gap: 1rem;
+  }
+
+  .main-card--person img {
+    width: 3.5rem;
+  }
+
+  .main-card--person p:first-child {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .main-card--person p:last-child {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .main-card--text p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    max-width: 21rem;
+  }
+}
