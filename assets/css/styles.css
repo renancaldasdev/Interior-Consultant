@@ -67,6 +67,10 @@ body {
   color: #181719;
 }
 
+.header-content span {
+  display: none;
+}
+
 .menu ul {
   display: flex;
   gap: 7rem;
