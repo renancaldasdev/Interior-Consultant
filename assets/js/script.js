@@ -1,15 +1,21 @@
-const menuOpen = document.querySelector(".open");
-const menuClose = document.querySelector(".close");
+const btnMobile = document.querySelector(".open");
+const closeMenu = document.querySelector(".close");
 
-function openMenu() {
-  menuOpen.style.display = "none";
-  menuClose.style.display = "block";
+function togleMenu() {
+  const nav = document.querySelector(".menu");
+  nav.classList.toggle("active");
+  if ((btnMobile.style.display = "none")) {
+    closeMenu.style.display = "block";
+  }
 }
 
-function closeMenu() {
-  menuClose.style.display = "none";
-  menuOpen.style.display = "block";
+function closeMobile() {
+  const nav = document.querySelector(".menu");
+  nav.classList.toggle("active");
+  if ((closeMenu.style.display = "none")) {
+    btnMobile.style.display = "block";
+  }
 }
 
-menuOpen.addEventListener("click", openMenu);
-menuClose.addEventListener("click", closeMenu);
+btnMobile.addEventListener("click", togleMenu);
+closeMenu.addEventListener("click", closeMobile);
